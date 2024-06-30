@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Abenezer Alebachew Endalew">
+  <meta name="description" content="This is a short technical documentation page for python">
+  <title>Simple Python Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+      <li><a class="nav-link" href="#Basic_Syntax">Basic Syntax</a></li>
+      <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+      <li><a class="nav-link" href="#Object-Oriented_Programming">Object-Oriented Programming</a></li>
+      <li><a class="nav-link" href="#Modules_and_Packages">Modules and Packages</a></li>
+      <li><a class="nav-link" href="#File_Handling_python">File Handling python</a></li>
+      <li><a class="nav-link" href="#Error_Handling">Error Handling</a></li>
+      <li><a class="nav-link" href="#Libraries_and_Frameworks">Libraries and Frameworks</a></li>
+      <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>
+        Introduction
+      </header>
+      <p>
+        Python is a high-level, interpreted programming language known for its readability and versatility. It supports
+        multiple programming paradigms, including procedural, object-oriented, and functional programming.
+      </p>
+    </section>
+    <section id="Getting_Started" class="main-section">
+      <header>
+        Getting Started
+      </header>
+      <h3>Installation</h3>
+      <p>Download and install Python from <a href="https://www.python.org/downloads/">python.org</a>.</p>
+      <h3>Running Python Code</h3>
+      <p>
+      <ul>
+        <li><span class="bold">Interactive Mode</span>: Open a terminal and type python or python3.</li>
+        <li><span class="bold">Script Mode</span>: Save code in a .py file and run it with python filename.py.</li>
+      </ul>
+      </p>
+    </section>
+    <section id="Basic_Syntax" class="main-section">
+      <header>
+        Basic Syntax
+      </header>
+      <h3>Variables</h3>
+      <code>
+          x = 10<br>
+          name = "Alice"
+        </code>
+      <h3>Data Types</h3>
+      <ul>
+        <li><span class="bold">Numbers</span>: int, float, complex</li>
+        <li><span class="bold">Strings</span>: "Hello"</li>
+        <li><span class="bold">Lists</span>: [1, 2, 3]</li>
+        <li><span class="bold">Tuples</span>: (1, 2, 3)</li>
+        <li><span class="bold">Dictionaries</span>: {"key": "value"}</li>
+        <li><span class="bold">Sets</span>: {1, 2, 3}</li>
+      </ul>
+      <h3>Comments</h3>
+      <code># This is a single-line comment</code>
+    </section>
+    <section id="Control_Structures" class="main-section">
+      <header>
+        Control Structures
+      </header>
+      <h3>Conditional Statements</h3>
+      <code>if x > 0:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print("Positive")<br>
+elif x == 0:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print("Zero")<br>
+else:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print("Negative")</code>
+      <h3>Loops</h3>
+      <h4>For Loop</h4>
+      <code>for i in range(5):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print(i)
+</code>
+      <h4>While Loop</h4>
+      <code>while x > 0:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print(x)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;x -= 1
+</code>
+      <h3>Functions</h3>
+      <code>def greet(name):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return "Hello, " + name
+
+print(greet("Alice"))
+</code>
+    </section>
+    <section id="Object-Oriented_Programming" class="main-section">
+      <header>
+        Object-Oriented Programming
+      </header>
+      <h3>Classes and Objects</h3>
+      <p>A class is a blueprint of an object and an object is an instance of a class that represents a real world
+        entity.</p>
+      <code>class Person:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, name, age):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.age = age<br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;def greet(self):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Hello, " + self.name<br>
+
+p1 = Person("Alice", 30)
+print(p1.greet())
+</code>
+    </section>
+    <section id="Modules_and_Packages" class="main-section">
+      <header>
+        Modules and Packages
+      </header>
+      <h3>Importing Modules</h3>
+      <code>import math<br>
+print(math.sqrt(16))
+</code>
+      <h3>Creating a Module</h3>
+      <p>Save the following code in <span class="bold">mymodule.py</span>:</p>
+      <code>def add(a, b):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return a + b
+</code>
+      <p>Then import and use it:</p>
+      <code>
+          import mymodule<br>
+print(mymodule.add(3, 4))
+        </code>
+    </section>
+    <section id="File_Handling_python" class="main-section">
+      <header>
+        File Handling
+        python
+      </header>
+      <p>Files can be opened and read using the following syntax: </p>
+      <code>
+          # Writing to a file<br>
+with open('test.txt', 'w') as file:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;file.write("Hello, World!")<br><br>
+
+# Reading from a file<br>
+with open('test.txt', 'r') as file:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;content = file.read()<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print(content)
+        </code>
+    </section>
+    <section id="Error_Handling" class="main-section">
+      <header>
+        Error Handling
+      </header>
+      <p>Python handles errors with the popular try/except block as shown here: </p>
+      <code>
+          try:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print(10 / 0)<br>
+except ZeroDivisionError:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;print("Cannot divide by zero")
+        </code>
+    </section>
+    <section id="Libraries_and_Frameworks" class="main-section">
+      <header>
+        Libraries and Frameworks
+      </header>
+      <p>Some popular libraries include NumPy for Numerical computations,
+        Pandas for Data analysis,
+        Matplotlib for Plotting graphs,
+        Requests for HTTP requests and
+        Web Frameworks like
+        Django and
+        Flask.</p>
+    </section>
+    <section id="Conclusion" class="main-section">
+      <header>
+        Conclusion
+      </header>
+      <p>Python is a versatile and easy-to-learn programming language. This documentation covers the basics to get you
+        started. Explore more features and libraries to fully leverage Python's capabilities.</p>
+      <p>For detailed documentation, visit the <a href="https://docs.python.org/3/">official Python documentation.</a>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

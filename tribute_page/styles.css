@@ -1,0 +1,48 @@
+#image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 0 auto;
+  display: block;
+  border-radius: 40%;
+}
+
+body {
+  background: linear-gradient(115deg, rgba(0, 0, 90, 0.5), rgba(136, 0, 136, 0.6)), url(https://th.bing.com/th/id/OIP.yLhj19UOBcaVqDZRs9nReAHaE8?rs=1&pid=ImgDetMain);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: Roboto;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#title {
+  text-align: center;
+}
+
+#tribute-info {
+  padding: 15px;
+  max-width: 80%;
+  margin: 0 auto 0 auto;
+}
+
+#tribute-info h2 {
+  text-align: center;
+}
+
+#tribute-info section {
+  font-style: italic;
+}
+
+main p {
+  text-align: center;
+}
+
+main p a {
+  color: #ffffff;
+  font-style: italic;
+}

@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-bottom: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+#nav-bar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-items: space-between;
+  align-items: center;
+}
+
+#nav-bar ul li {
+  padding: 0 10px;
+  list-style: none;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#header-img {
+  object-fit: cover;
+  width: 150px;
+}
+
+#features ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px 40px;
+}
+
+#features ul li img {
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#working {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+#working iframe {
+  width: 70%;
+  height: 350px;
+}
+
+#pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#pricing div {
+  border: 2px solid #000000;
+  padding: 10px 50px;
+  text-align: center;
+  margin: 30px;
+}
+
+#pricing div h3 {
+  padding: 10px;
+  background-color: grey;
+  color: #ffffff;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+#form input[type="email"] {
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+}
+
+#form input[type="submit"] {
+  width: 200px;
+  height: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+#form input[type="submit"]:hover {
+  background-color: grey;
+  color: white;
+}
+
+@media (max-width: 720px) {
+  #pricing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  #pricing div {
+    margin: 10px;
+    width: 60%;
+    text-align: center;
+  }
+
+  #working iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  #features ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 40px;
+  }
+
+  #working iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
